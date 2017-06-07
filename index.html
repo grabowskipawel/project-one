@@ -2,53 +2,100 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>jQuery ćwiczenia</title>
-    
+    <title>Paweł Grabowski portfolio</title>
+    <meta name="description" content="Strona ma spełniać zadanie reprezantacyją. Ale póki co wygląda, jak zbrodnia na dobrym guście">
     <link rel="stylesheet" href="style.css" type="text/css">
-    
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="font-mfizz-2.4.1/dist/font-mfizz.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla|Righteous" rel="stylesheet">
      <!--CDN links for TweenLite, CSSPlugin, and EasePack-->
+     
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/CSSPlugin.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/easing/EasePack.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
     <link rel="stylesheet" href="style.css">
     
 </head>
 <body>
+   
  <nav>
        <ul>
-        <li><div class="hovers"> <div class="circle"></div><a href="#one"> home</a></div></li>
-        <li><div class="hovers"> <div class="circle"></div><a> about</a></div></li>
-        <li><div class="hovers"> <div class="circle"></div><a> portfolio</a></div></li>
-        <li><div class="hovers"> <div class="circle"></div><a> contact</a></div></li>
+        <li><div class="hovers"> <div class="circle"></div><a href="#home"> STRONA GŁÓWNA</a></div></li>
+        <li><div class="hovers"> <div class="circle"></div><a href="#about"> O MNIE</a></div></li>
+        <li><div class="hovers"> <div class="circle"></div><a href="#portfolio"> PORTFOLIO</a></div></li>
+        <li><div class="hovers"> <div class="circle"></div><a href="#contact">KONTAKT</a></div></li>
         
     </ul>
 </nav>
- <div id="hello"></div>
+    <div class="container">        
+        <p>Wersja na urządzenia mobilne nie jest jeszcze dostępna. Zapraszam później.</p>
+    </div>
+    <div id="home"><div class="short"><p class="secondShow">Nie mogę nazwać się jeszce front-end developerem.</p> <p class="thirdShow"> Ale kiedyś chciałbym zasłużyć na to miano. Na tej stronie znajdziesz kilka informacji o mnie.</p></div>
+     </div>
+    <div id="about"><div class="short"><h1 class="firstShow">O mnie</h1>Cześć. <span class="secondShow">Nazywam się Paweł. Mam 25 lat. Obecnie mieszkam w Gdańsku.<br></span>  <span class="thirdShow"> Z wykształcenia jestem technologiem żywności. Pewnego dnia stwierdziłem : <span class="quote">"Hej, czas nauczyć się czegoś nowego"</span> Miało to miejsce około rok temu. Od tego czasu staram się dzieliś swój czas pomiędzy pracę, książi, jazdę na rowerze i naukę front-endowych technologii</span></div> </div>
      
- <div id="portfolio">
-   
+ <div id="portfolio">   
    <div id="one">
        
-       <p class="textRotate">PORTFOLIO</p>
+       <h1 class="textRotate">PORTFOLIO</h1>
        <div class="examples">
-           <div class="exampleOne">             
-               <div class="insideText">Strona oparta na Bootsrapie</div>
+           <div class="example exampleOne">  
+              <div class="moreInfo"><a href="https://github.com/grabowskipawel/zadanie-probne" target="_blank"><i class="fa fa-github fa-3x"></i></a>
+              <a href="http://www.wilson91.ayz.pl/" target="_blank"><i class="fa fa-window-maximize fa-3x"></i></a></div>           
+               <div class="insideTextOne insideText">Strona firmy <i class="icon-html5"></i> <i class="icon-jquery"></i> <i class="icon-css3"></i> <i class="icon-mobile-device"></i> </div>
            </div>
-            <div class="exampleTwo">             
-               <div class="insideTextTwo">Strona oparta na Bootsrapie</div>
+            <div class=" example exampleTwo"> 
+               <div class="moreInfo"><a href="https://github.com/grabowskipawel/zadanie-probne" target="_blank"><i class="fa fa-github fa-3x"></i></a>
+              <a href="http://www.wilson91.ayz.pl/" target="_blank"><i class="fa fa-window-maximize fa-3x"></i></a></div>             
+               <div class="insideTextTwo insideText">Strona oparta na Bootsrapie <i class="icon-html5"></i> <i class="icon-jquery"></i> <i class="icon-css3"></i> <i class="icon-mobile-device"></i></div>
            </div>
        </div>
     </div>
-   <div id="two">cześć2</div>
-</div>
-    
-    
+   <div id="two">
+      <div class="examples">
+           <div class="example exampleThree"> 
+               <div class="moreInfo"><a href="https://github.com/grabowskipawel/singlePage_bootstrap" target="_blank"><i class="fa fa-github fa-3x"></i></a>
+              <a href="https://grabowskipawel.github.io/singlePage_bootstrap/" target="_blank"><i class="fa fa-window-maximize fa-3x"></i></a></div>             
+               <div class="insideTextThree insideText">Strona wizytówka oparta na Bootstrapie<br><i class="icon-html5"></i> <i class="icon-jquery"></i> <i class="icon-css3"></i><i class="icon-bootstrap"></i></div>
+           </div>
+           
+            <div class=" example exampleFour">   
+               <div class="moreInfo"><a href="https://github.com/grabowskipawel/zadanie-probne" target="_blank"><i class="fa fa-github fa-3x"></i></a>
+              <a href="http://www.wilson91.ayz.pl/" target="_blank"><i class="fa fa-window-maximize fa-3x"></i></a></div>           
+               <div class="insideTextFour insideText">Strona poświęcona książce <br><i class="icon-html5"></i> <i class="icon-bootstrap"></i> <i class="icon-css3"></i>  </div></div>
+           </div>
+       </div>
+     
+     
+     
+     </div>
+
+   
+    <div id="contact">
+       <h1>KONTAKT</h1>
+        <div class="socialsWrapper">
+        
+            <div class="gitHub socials"><a href="https://github.com/grabowskipawel/" target="_blank"><i class="fa fa-github"></i></a></div>
+            <div class="linkedIn socials">
+                <a href="https://www.linkedin.com/in/pawe%C5%82-grabowski-a4865aaa/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            </div>
+           
+            <div class="facebook socials"><a href="https://www.facebook.com/profile.php?id=100001943363617" target="_blank"><i class="fa fa-facebook"></i></a></div>
+             <div class="cv socials"><a href="Pawe%C5%82%20Grabowski%20CV.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i></a></div>
+             
+        
+        
+        </div>
+        <div class="email"></div>
+    </div>
+    <footer><p>Paweł Grabowski &#xa9; 2017</p></footer>
 
    
     <script src="jquery-3.1.1%20(2).js"></script>
     <script src="skrypt.js"></script>
     <script src="scroll.js"></script>
     
-</div>
+
 </body>
 </html>
